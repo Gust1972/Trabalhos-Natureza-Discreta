@@ -30,13 +30,13 @@ def fazerProd(con1):
 #Analisar o arquivo txt lido e realizar as operações
 for i, linha in enumerate(linhas):
   if linha[0] == "U":
-    c1 = fazerConjunto(linhas[i + 1])
-    c2 = fazerConjunto(linhas[i + 2])
+    c1 = fazerConjuntostr(linhas[i + 1])
+    c2 = fazerConjuntostr(linhas[i + 2])
     c3 = fazerUniao(c1, c2)
     print("União: Conjunto 1", c1, "conjunto 2", c2, "resultado", c3)
   elif linha[0] == "I":
-    c4 = fazerConjunto(linhas[i + 1])
-    c5 = fazerConjunto(linhas[i + 2])
+    c4 = fazerConjuntostr(linhas[i + 1])
+    c5 = fazerConjuntostr(linhas[i + 2])
     c6 = fazerInter(c4, c5)
     print("Interseção: Conjunto 1", c4, "conjunto 2", c5, "resultado", c6)
   elif linha[0] == "D":
